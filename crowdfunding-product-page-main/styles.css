@@ -1,0 +1,254 @@
+body{
+    height:auto;
+    width: auto;
+    background-color: hsl(0, 0%, 90%);
+}
+
+br{
+    display: block; 
+    content: ""; 
+    margin-top: 1.5rem;
+}
+
+.header{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    word-spacing: 10px;
+    background: url("./images/image-hero-desktop.jpg");
+    background-size: 100% 100%;
+    padding: 0;
+}
+
+.mainBody{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: -8rem;
+}
+
+.cardBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-wrapper{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 50vw;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-color: hsl(0, 0%, 48%);
+    border-width: thin;
+    font-family: "Commissioner" , "sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+.card-title{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 50vw;
+    border-width: thin;
+    font-family: "Commissioner" , "sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+    padding: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    font-family: "Commissioner" , "sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2rem;
+    padding: 1rem;
+}
+
+.card-progress{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 50vw;
+    background-color: whitesmoke;
+    font-family: "Commissioner" , "sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+    padding: 1rem;
+}
+
+.card-about{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 50vw;
+    background-color: whitesmoke;
+    font-family: "Commissioner" , "sans-serif";
+    font-weight: 400;
+    font-size: 16px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    color: hsl(0, 0%, 50%);
+
+}
+
+.content-body{
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 0%, 70%);
+}
+.wsl-wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.wsl{
+    display: flex;
+    flex-direction: row;
+}
+
+.wsl>.amount-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.select-reward{
+    display: flex;
+    color: hsl(176, 50%, 47%);
+}
+
+.number{
+    color:black;
+    font-weight: 700;
+    font-size: 26px;
+    margin-right: 0.5rem;
+}
+
+.card-header-wrapper{
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.card-main-header{
+    display: flex;
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-main-content{
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+}
+
+.backed.start{
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+}
+
+.backed.middle{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.backed.end{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+}
+
+.backed>.backed-number{
+    font-family: "Commissioner" , "sans-serif";
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    color: hsl(0, 0%, 0%);
+    margin-bottom: 1rem;
+}
+
+.backed>.backed-text{
+    color: hsl(0, 0%, 70%);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.pledge{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(176, 50%, 47%);
+}
+
+.card-wrapper-for-progress{
+    background-color: whitesmoke;
+    padding: 2rem;
+}
+
+line{
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: hsl(0, 0%, 70%);
+    height: 75px;
+}
+
+.card-row-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-row-wrapper.left{
+    display: flex;
+}
+
+.card-row-wrapper.right{
+    display: flex;
+    justify-content: flex-end;
+}
