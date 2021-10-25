@@ -11,34 +11,48 @@ br{
 }
 
 .header{
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     text-align: right;
     word-spacing: 10px;
-    background: url("./images/image-hero-desktop.jpg");
-    background-size: 100% 100%;
     padding: 0;
 }
 
 .mainBody{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: -8rem;
+    background: url("./images/image-hero-desktop.jpg");
+    background-size: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    
 }
 
 .cardBody{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 18rem;
 }
 .card-wrapper{
+    display: flex;
+    flex-direction: column;
     background-color: whitesmoke;
     border-radius: 10px;
     padding: 2rem;
     margin-bottom: 1.5rem;
+    height: 100%;
+    align-items: center;
+
+}
+
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -3.5rem;
 }
 
 .card{
@@ -56,6 +70,13 @@ br{
     padding: 1rem;
     margin-bottom: 1.5rem;
 }
+
+.card-title-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
 .card-title{
     display: flex;
     flex-direction: column;
@@ -90,6 +111,7 @@ br{
     font-weight: 400;
     font-size: 16px;
     padding: 1rem;
+    height: 100%;
 }
 
 .card-about{
@@ -101,8 +123,15 @@ br{
     font-family: "Commissioner" , "sans-serif";
     font-weight: 400;
     font-size: 16px;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.card-about-header{
+    display: flex;
+    font-family: "Commissioner" , "sans-serif";
+    font-weight: 700;
+    font-size: 18px;
+    padding-bottom: 2rem;
 }
 
 .card-content{
@@ -117,17 +146,21 @@ br{
     display: flex;
     flex-direction: column;
     color: hsl(0, 0%, 70%);
+    padding: 1rem;
 }
 .wsl-wrapper{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 100%;
     margin-top: 2rem;
+    align-items: center;
 }
 
 .wsl{
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
 
 .wsl>.amount-left{
@@ -137,9 +170,19 @@ br{
     font-size: 16px;
 }
 
-.select-reward{
-    display: flex;
-    color: hsl(176, 50%, 47%);
+.select-reward-btn{
+    display: block;
+    border: none;
+    outline: none;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: hsl(176, 50%, 47%);
+    color: whitesmoke;
+    cursor: pointer;
+    font-family: "Commissioner" , "sans-serif";
 }
 
 .number{
@@ -152,9 +195,12 @@ br{
 .card-header-wrapper{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     font-weight: 400;
     font-size: 16px;
-
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
 }
 
 .card-header{
@@ -162,16 +208,16 @@ br{
     justify-content: space-between;
     font-weight: 700;
     font-size: 18px;
-    margin-bottom: 1rem;
 }
 
 .card-main-header{
     display: flex;
     flex-direction: row;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
     justify-content: center;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .card-main-content{
@@ -181,6 +227,7 @@ br{
     font-size: 16px;
     justify-content: center;
     text-align: center;
+    color: hsl(0, 0%, 50%);
 }
 
 .backed.start{
@@ -249,6 +296,36 @@ line{
 }
 
 .card-row-wrapper.right{
+    display: inline-flex;
+    flex-direction: row;
+    border-width: 0;
+    background: whitesmoke;
+}
+
+.bookmark-container{
     display: flex;
+    flex-direction: row;
+    border: none;
+    outline: none;
+    height: 100%;
+    font-size: 14px;
+    border-radius: 30px;
+    overflow: visible;
+    background: hsl(0, 0%, 90%);
+    cursor: pointer;
     justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    color: hsl(0, 0%, 40%);
+    font-family: "Commissioner" , "sans-serif";
+}
+
+.bookmark-logo{
+    margin-left:-0.5rem;
+}
+.bookmark-text{
+    border: none;
+    padding: 0 20px 0px 10px;
+    
 }
