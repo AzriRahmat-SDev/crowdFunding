@@ -37,22 +37,23 @@ br{
     align-items: center;
     margin-top: 18rem;
 }
+
 .card-wrapper{
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 1.5rem;
     height: 100%;
     width: 100%;
-    align-items: left;
+    align-items: center;
 }
 
 .logo{
     margin-left: auto;
     margin-right: auto;
-    margin-top: -3.5rem;
+    margin-top: -3rem;
 }
 
 .card{
@@ -111,6 +112,7 @@ br{
     font-weight: 400;
     font-size: 16px;
     height: 100%;
+    padding: 1rem 0 1rem 0;
 }
 
 .card-about{
@@ -122,7 +124,7 @@ br{
     font-family: "Commissioner" , "sans-serif";
     font-weight: 400;
     font-size: 16px;
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
 }
 
 .card-about-header{
@@ -130,7 +132,7 @@ br{
     font-family: "Commissioner" , "sans-serif";
     font-weight: 700;
     font-size: 18px;
-    padding-bottom: 2rem;
+    padding: 1rem 0 1rem 0;
 }
 
 .card-content{
@@ -147,6 +149,7 @@ br{
     color: hsl(0, 0%, 70%);
     padding: 1rem;
 }
+
 .wsl-wrapper{
     display:flex;
     flex-direction: row;
@@ -216,7 +219,7 @@ br{
     font-size: 22px;
     justify-content: center;
     text-align: center;
-    margin-bottom: 1rem;
+    padding: 1rem 0 1rem 0;
 }
 
 .card-main-content{
@@ -320,20 +323,6 @@ line{
     font-family: "Commissioner" , "sans-serif";
 }
 
-.close-modal-btn{
-    display: block;
-    align-items: center;
-    color: #ccc;
-    float: right;
-    font-size: 30px;
-}
-
-.close-modal-btn:hover,.close-modal-btn:focus{
-    color:#000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .bookmark-logo{
     margin-left:-0.5rem;
 }
@@ -344,31 +333,15 @@ line{
     
 }
 
-.backProjectModal{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0,0.2);
-}
-
-.backProjectModal-content{
-    background-color: #f4f4f4;
-    margin: 20% auto;
-    padding: 20px;
-    width: 70%;
-}
-
 .progress-wrapper{
     display: flex;
+    flex-direction: row;
     align-items: left;
     height: 2rem;
     padding-top: 2rem;
-    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 50vw;
 }
 
 .progress-bar{
