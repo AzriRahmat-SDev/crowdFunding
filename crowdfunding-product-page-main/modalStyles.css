@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
-    padding: 1rem;
     align-items: center;
     justify-content: center;
 }
@@ -20,7 +19,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 50vw;
     background-color: whitesmoke;
     font-family: "Commissioner" , "sans-serif";
     font-weight: 400;
@@ -94,7 +93,8 @@
 .modal-card-header-wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: left;
+    width: auto;
     font-weight: 400;
     font-size: 16px;
     padding-left: 1rem;
@@ -111,18 +111,48 @@
 
 .modal-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .modal-content-body{
     display: flex;
     flex-direction: column;
+    width: 50vw;
     color: hsl(0, 0%, 70%);
     padding: 1rem 0 1rem 0;
 }
 
 .modal-radio{
     display: flex;
-    width: 10%;
+    align-content: center;
+    height: 100%;
+    width: auto;
+}
+
+.radio-edition-pledge-avail-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw
+}
+
+.radio-edition-pledge{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: left;
+    height:100%;
+    width: 80%;
+}
+
+.pledge-cost{
+    display: flex;
+    width: auto;
+    color: hsl(176, 50%, 47%);
+}
+
+.available{
+    display: flex;
+    padding-left: -10rem;
 }
 
