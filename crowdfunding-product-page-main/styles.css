@@ -187,6 +187,12 @@ br{
     font-family: "Commissioner" , "sans-serif";
 }
 
+.select-reward-btn:hover,.select-reward-btn:focus{
+    background-color:hsl(176, 72%, 28%);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .number{
     color:black;
     font-weight: 700;
@@ -325,6 +331,7 @@ line{
 
 .bookmark-logo{
     margin-left:-0.5rem;
+    /* filter: invert(38%) sepia(26%) saturate(1376%) hue-rotate(127deg) brightness(93%) contrast(85%); */
 }
 
 .bookmark-text{
