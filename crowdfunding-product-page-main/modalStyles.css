@@ -34,15 +34,28 @@
 
 }
 
-.close-modal-btn{
+.close-btn-wrapper{
     display: flex;
+    flex-direction: row;
+    border: none;
+    outline: none;
+    background: none;
+    justify-content: flex-end;
     align-items: center;
-    color: #ccc;
-    float: right;
-    font-size: 30px;
+    text-align: center;
 }
 
-.close-modal-btn:hover,.close-modal-btn:focus{
+.close-modal-btn{
+    display: block;
+    float: right;
+    width: 20px;
+    height: 20px;
+    background-image: url(./images/icon-close-modal.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.close-btn-wrapper:hover,.close-btn-wrapper:focus{
     color:#000;
     text-decoration: none;
     cursor: pointer;

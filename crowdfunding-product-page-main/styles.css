@@ -330,8 +330,12 @@ line{
 }
 
 .bookmark-logo{
-    margin-left:-0.5rem;
-    /* filter: invert(38%) sepia(26%) saturate(1376%) hue-rotate(127deg) brightness(93%) contrast(85%); */
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-image: url(./images/icon-bookmark.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .bookmark-text{

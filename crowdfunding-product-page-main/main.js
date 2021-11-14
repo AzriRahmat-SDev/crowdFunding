@@ -32,7 +32,13 @@ function outsideClick(e){
 }
 
 function bookmarkEvent(){
-    document.querySelector("#bookmark-container").style.color = "hsl(176, 72%, 28%)";
-    document.querySelector("#bookmark-text").textContent = "Bookmarked";
-    document.querySelector("#bookmark-logo").style.color = "hsl(176, 72%, 28%)"
+    if(document.querySelector("#bookmark-text").textContent === "Bookmark"){
+        document.querySelector("#bookmark-container").style.color = "hsl(176, 72%, 28%)";
+        document.querySelector("#bookmark-text").textContent = "Bookmarked";
+        document.querySelector("#bookmark-logo").style.background =  "url(./images/icon-bookmarked.svg)";
+    }else{
+        document.querySelector("#bookmark-container").style.color = "hsl(0, 0%, 40%)";
+        document.querySelector("#bookmark-text").textContent = "Bookmark";
+        document.querySelector("#bookmark-logo").style.background =  "url(./images/icon-bookmark.svg)";
+    }
 }
