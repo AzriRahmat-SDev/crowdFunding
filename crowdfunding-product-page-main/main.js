@@ -4,12 +4,18 @@ var bookmark = document.querySelector('#bookmarkBtn');
 
 var closeBtn = document.getElementsByClassName('close-modal-btn')[0];
 
+var closeBtnMouseHoverHandler = document.querySelector("#close-btn");
+
 // Event listeners 'click' for example
 backProject.addEventListener('click', openModal);
 
 closeBtn.addEventListener('click', closeModal);
 
-bookmark.addEventListener('click', bookmarkEvent)
+bookmark.addEventListener('click', bookmarkEvent);
+
+closeBtnMouseHoverHandler.addEventListener('mouseover', closeBtnMouseOver);
+
+closeBtnMouseHoverHandler.addEventListener('mouseleave',  closeBtnMouseLeave);
 
 //Listen for outside click
 window.addEventListener('click', outsideClick);
@@ -41,4 +47,14 @@ function bookmarkEvent(){
         document.querySelector("#bookmark-text").textContent = "Bookmark";
         document.querySelector("#bookmark-logo").style.background =  "url(./images/icon-bookmark.svg)";
     }
+}
+
+function closeBtnMouseOver(){
+    console.log('mouse over');
+    document.querySelector("#close-btn").style.backgroundImage = "url(./images/icon-close-menu-hover.svg)";
+}
+
+function closeBtnMouseLeave(){
+    console.log('mouse leave')
+    document.querySelector("#close-btn").style.backgroundImage = null;
 }
