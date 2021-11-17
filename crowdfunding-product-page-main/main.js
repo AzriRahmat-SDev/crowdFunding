@@ -28,8 +28,14 @@ pledgeEdition.addEventListener('mouseover', () => {
 // })
 
 pledgeEdition.addEventListener('click', () => {
-    document.querySelector('#pledge2').checked = true
-    document.querySelector('#pledge-edition-bamboo').style.color = "hsl(176, 50%, 47%)";
+    if(document.querySelector('#pledge2').checked === false){
+        document.querySelector('#pledge2').checked = true
+        document.querySelector('#pledge-edition-bamboo').style.color = "hsl(176, 50%, 47%)";
+    }else{
+        document.querySelector('#pledge2').checked = false
+        document.querySelector('#pledge-edition-bamboo').style.color = "hsl(0, 0%, 0%)";
+    }
+    
 })
 
 //Listen for outside click
