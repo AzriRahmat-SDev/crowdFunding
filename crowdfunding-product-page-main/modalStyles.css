@@ -112,7 +112,7 @@
     font-size: 16px;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: hsl(176, 50%, 47%);
+    color: hsl(0, 0%, 0%);
 }
 
 .modal-container-header{
@@ -160,6 +160,8 @@
 
 .pledge-cost{
     display: flex;
+    text-align: center;
+    align-items: center;
     width: auto;
     color: hsl(176, 50%, 47%);
 }
@@ -168,4 +170,26 @@
     display: flex;
     padding-left: -10rem;
 }
+
+.modal-radio{
+    align-items: center;
+    justify-content: center;
+}
+
+#pledge-edition-no{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: '';
+}
+
+#pledge-edition-bamboo{
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 0%);
+}
+
 
