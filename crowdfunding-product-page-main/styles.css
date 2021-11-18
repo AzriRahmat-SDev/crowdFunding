@@ -200,6 +200,15 @@ br{
     margin-right: 0.5rem;
 }
 
+.number-modal{
+    display: flex;
+    color: black;
+    font-weight: 700;
+    font-size: 16px;
+    justify-content: flex-end;
+    margin-right: 0.5rem;
+}
+
 .card-header-wrapper{
     display: flex;
     flex-direction: row;
