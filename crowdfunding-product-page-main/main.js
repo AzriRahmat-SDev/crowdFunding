@@ -6,7 +6,7 @@ var closeBtn = document.getElementsByClassName('close-modal-btn')[0];
 
 var closeBtnMouseHoverHandler = document.querySelector("#close-btn");
 
-var pledgeEdition = document.querySelector('#pledge-edition-bamboo');
+// var pledgeEdition = document.querySelector('#pledge-edition-bamboo');
 
 // Event listeners 'click' for example
 backProject.addEventListener('click', openModal);
@@ -19,24 +19,24 @@ closeBtnMouseHoverHandler.addEventListener('mouseover', closeBtnMouseOver);
 
 closeBtnMouseHoverHandler.addEventListener('mouseleave',  closeBtnMouseLeave);
 
-pledgeEdition.addEventListener('mouseover', () => {
-    document.querySelector('#pledge-edition-bamboo').style.color = "hsl(176, 50%, 47%)";
-})
+// pledgeEdition.addEventListener('mouseover', () => {
+//     document.querySelector('#pledge-edition-bamboo').style.color = "hsl(176, 50%, 47%)";
+// })
 
 // pledgeEdition.addEventListener('mouseleave', () => {
 //     document.querySelector('#pledge-edition-bamboo').style.color = "hsl(0,0%,0%)";
 // })
 
-pledgeEdition.addEventListener('click', () => {
-    if(document.querySelector('#pledge2').checked === false){
-        document.querySelector('#pledge2').checked = true
-        document.querySelector('#pledge-edition-bamboo').style.color = "hsl(176, 50%, 47%)";
-    }else{
-        document.querySelector('#pledge2').checked = false
-        document.querySelector('#pledge-edition-bamboo').style.color = "hsl(0, 0%, 0%)";
-    }
+// pledgeEdition.addEventListener('click', () => {
+//     if(document.querySelector('#pledge2').checked === false){
+//         document.querySelector('#pledge2').checked = true
+//         document.querySelector('#pledge-edition-bamboo').style.color = "hsl(176, 50%, 47%)";
+//     }else{
+//         document.querySelector('#pledge2').checked = false
+//         document.querySelector('#pledge-edition-bamboo').style.color = "hsl(0, 0%, 0%)";
+//     }
     
-})
+// })
 
 //Listen for outside click
 window.addEventListener('click', outsideClick);

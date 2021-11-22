@@ -1,195 +1,183 @@
-.modal-card-wrapper{
-    display: flex;
-    flex-direction: column;
-    background-color: whitesmoke;
-    align-items: center;
-    justify-content: center;
+.modal-card-wrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: whitesmoke;
+	align-items: center;
+	justify-content: center;
 }
 
-.modal-card-about-header{
-    display: flex;
-    font-family: "Commissioner" , "sans-serif";
-    font-weight: 700;
-    font-size: 18px;
-    padding: 1rem 0 0 0;
+.modal-card-about-header {
+	display: flex;
+	font-family: "Commissioner", "sans-serif";
+	font-weight: 700;
+	font-size: 18px;
+	padding: 1rem 0 0 0;
 }
 
-.modal-card-about{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 50vw;
-    background-color: whitesmoke;
-    font-family: "Commissioner" , "sans-serif";
-    font-weight: 400;
-    font-size: 15px;
+.modal-card-about {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 50vw;
+	background-color: whitesmoke;
+	font-family: "Commissioner", "sans-serif";
+	font-weight: 400;
+	font-size: 15px;
 }
 
-.modal-card-content{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 0 2rem 0;
-    color: hsl(0, 0%, 50%);
-
+.modal-card-content {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0 2rem 0;
+	color: hsl(0, 0%, 50%);
 }
 
-.close-btn-wrapper{
-    display: flex;
-    flex-direction: row;
-    border: none;
-    outline: none;
-    background: none;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
+.close-btn-wrapper {
+	display: flex;
+	flex-direction: row;
+	border: none;
+	outline: none;
+	background: none;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
 }
 
-.close-modal-btn{
-    display: block;
-    float: right;
-    width: 20px;
-    height: 20px;
-    background-image: url(./images/icon-close-modal.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+.close-modal-btn {
+	display: block;
+	float: right;
+	width: 20px;
+	height: 20px;
+	background-image: url(./images/icon-close-modal.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-.close-btn-wrapper:hover,.close-btn-wrapper:focus{
-    color:#000;
-    text-decoration: none;
-    cursor: pointer;
+.close-btn-wrapper:hover,
+.close-btn-wrapper:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
 
-.backProjectModal{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0,0.2);
+.backProjectModal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.backProjectModal-content{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    width: 60%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 10px;
+.backProjectModal-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f4f4f4;
+	padding: 20px;
+	width: 60%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
 }
 
-.modal-card{
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-    width: 50vw;
-    background-color: whitesmoke;
-    border-style: solid;
-    border-color: hsl(0, 0%, 48%);
-    border-width: thin;
-    font-family: "Commissioner" , "sans-serif";
-    font-weight: 400;
-    font-size: 16px;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
+.modal-card {
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px;
+	width: 50vw;
+	background-color: whitesmoke;
+	border-style: solid;
+	border-color: hsl(0, 0%, 48%);
+	border-width: thin;
+	font-family: "Commissioner", "sans-serif";
+	font-weight: 400;
+	font-size: 16px;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
 }
 
-.modal-card-header-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    width: auto;
-    font-weight: 400;
-    font-size: 16px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    color: hsl(0, 0%, 0%);
+.modal-card-header-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	width: auto;
+	font-weight: 400;
+	font-size: 16px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	color: hsl(0, 0%, 0%);
 }
 
-.modal-container-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
+.modal-container-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
 }
 
-.modal-container{
-    display: flex;
-    flex-direction: column;
+.modal-container {
+	display: flex;
+	flex-direction: column;
 }
 
-.modal-content-body{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    color: hsl(0, 0%, 70%);
-    padding: 1rem 0 1rem 0;
+.modal-content-body {
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+	color: hsl(0, 0%, 70%);
+	padding: 1rem 0 1rem 0;
 }
 
-.modal-radio{
-    display: flex;
-    align-content: center;
-    height: 100%;
-    width: auto;
+.modal-radio {
+	display: flex;
+	align-content: center;
+	height: 100%;
+	width: auto;
 }
 
-.radio-edition-pledge-avail-container{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 50vw
+.radio-edition-pledge-avail-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 50vw;
 }
 
-.radio-edition-pledge{
-    display:flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: left;
-    height:100%;
-    width: 80%;
+.radio-edition-pledge {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: left;
+	height: 100%;
+	width: 80%;
 }
 
-.pledge-cost{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    width: auto;
-    color: hsl(176, 50%, 47%);
+.pledge-cost {
+	display: flex;
+	text-align: center;
+	align-items: center;
+	width: auto;
+	color: hsl(176, 50%, 47%);
 }
 
-.available{
-    display: flex;
-    padding-left: -10rem;
+.available {
+	display: flex;
+	padding-left: -10rem;
 }
 
-.modal-radio{
-    align-items: center;
-    justify-content: center;
+.modal-radio {
+	align-items: center;
+	justify-content: center;
 }
 
-#pledge-edition-no{
-    outline: none;
-    border: none;
-    background: none;
-    cursor: pointer;
-    color: '';
+input[type="radio"]:checked + .modal-card-header-wrapper,
+.modal-card-header-wrapper:hover {
+	color: hsl(176, 50%, 47%);
+	cursor: pointer;
 }
-
-#pledge-edition-bamboo{
-    outline: none;
-    border: none;
-    background: none;
-    cursor: pointer;
-    color: hsl(0, 0%, 0%);
-}
-
-
