@@ -1,379 +1,379 @@
-body{
-    height:auto;
-    width: auto;
-    background-color: hsl(0, 0%, 90%);
+body {
+	height: auto;
+	width: auto;
+	background-color: hsl(0, 0%, 90%);
 }
 
-br{
-    display: block; 
-    content: ""; 
-    margin-top: 1.5rem;
+br {
+	display: block;
+	content: "";
+	margin-top: 1.5rem;
 }
 
-.header{
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    word-spacing: 10px;
-    padding: 0;
+.header {
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	word-spacing: 10px;
+	padding: 0;
 }
 
-.mainBody{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url("./images/image-hero-desktop.jpg");
-    background-size: auto;
-    background-position: top;
-    background-repeat: no-repeat;
-    
+.mainBody {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url("./images/image-hero-desktop.jpg");
+	background-size: auto;
+	background-position: top;
+	background-repeat: no-repeat;
 }
 
-.cardBody{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 18rem;
+.cardBody {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 18rem;
 }
 
-.card-wrapper{
-    display: flex;
-    flex-direction: column;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    height: 100%;
-    width: 100%;
-    align-items: center;
+.card-wrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: whitesmoke;
+	border-radius: 10px;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
+	height: 100%;
+	width: 100%;
+	align-items: center;
 }
 
-.logo{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -3rem;
+.logo {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -3rem;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    width: 50vw;
-    background-color: whitesmoke;
-    border-style: solid;
-    border-color: hsl(0, 0%, 48%);
-    border-width: thin;
-    font-family: "Commissioner" , "sans-serif";
-    font-weight: 400;
-    font-size: 16px;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
+.card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	width: 50vw;
+	background-color: whitesmoke;
+	border-style: solid;
+	border-color: hsl(0, 0%, 48%);
+	border-width: thin;
+	font-family: "Commissioner", "sans-serif";
+	font-weight: 400;
+	font-size: 16px;
+	padding: 1rem;
+	margin-bottom: 1.5rem;
 }
 
-.card-title-wrapper{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
+.card-title-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2rem;
 }
 
-.card-title{
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    width: 50vw;
-    border-width: thin;
-    font-family: "Commissioner" , "sans-serif";
-    font-weight: 400;
-    font-size: 16px;
-    padding: 1rem;
+.card-title {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	width: 50vw;
+	border-width: thin;
+	font-family: "Commissioner", "sans-serif";
+	font-weight: 400;
+	font-size: 16px;
+	padding: 1rem;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    font-family: "Commissioner" , "sans-serif";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 2rem;
-    padding: 1rem;
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+	font-family: "Commissioner", "sans-serif";
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 2rem;
+	padding: 1rem;
 }
 
-.card-progress{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between ;
-    width: 50vw;
-    background-color: whitesmoke;
-    font-family: "Commissioner" , "sans-serif";
-    font-weight: 400;
-    font-size: 16px;
-    height: 100%;
-    padding: 1rem 0 1rem 0;
+.card-progress {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 50vw;
+	background-color: whitesmoke;
+	font-family: "Commissioner", "sans-serif";
+	font-weight: 400;
+	font-size: 16px;
+	height: 100%;
+	padding: 1rem 0 1rem 0;
 }
 
-.card-about{
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    width: 50vw;
-    background-color: whitesmoke;
-    font-family: "Commissioner" , "sans-serif";
-    font-weight: 400;
-    font-size: 16px;
-    padding-bottom: 2rem;
+.card-about {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	width: 50vw;
+	background-color: whitesmoke;
+	font-family: "Commissioner", "sans-serif";
+	font-weight: 400;
+	font-size: 16px;
+	padding-bottom: 2rem;
 }
 
-.card-about-header{
-    display: flex;
-    font-family: "Commissioner" , "sans-serif";
-    font-weight: 700;
-    font-size: 18px;
-    padding: 1rem 0 1rem 0;
+.card-about-header {
+	display: flex;
+	font-family: "Commissioner", "sans-serif";
+	font-weight: 700;
+	font-size: 18px;
+	padding: 1rem 0 1rem 0;
 }
 
-.card-content{
-    display: flex;
-    flex-direction: column;
-    line-height: 2rem;
-    color: hsl(0, 0%, 50%);
-
+.card-content {
+	display: flex;
+	flex-direction: column;
+	line-height: 2rem;
+	color: hsl(0, 0%, 50%);
 }
 
-.content-body{
-    display: flex;
-    flex-direction: column;
-    color: hsl(0, 0%, 70%);
-    padding: 1rem;
+.content-body {
+	display: flex;
+	flex-direction: column;
+	color: hsl(0, 0%, 70%);
+	padding: 1rem;
 }
 
-.wsl-wrapper{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100%;
-    margin-top: 2rem;
-    align-items: center;
+.wsl-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 100%;
+	margin-top: 2rem;
+	align-items: center;
 }
 
-.wsl{
-    display: flex;
-    flex-direction: row;
-    height: 100%;
+.wsl {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
 }
 
-.wsl>.amount-left{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
+.wsl > .amount-left {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
 }
 
-.select-reward-btn{
-    display: block;
-    border: none;
-    outline: none;
-    height: 50px;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 10px 20px;
-    border-radius: 30px;
-    background: hsl(176, 50%, 47%);
-    color: whitesmoke;
-    cursor: pointer;
-    font-family: "Commissioner" , "sans-serif";
+.select-reward-btn {
+	display: block;
+	border: none;
+	outline: none;
+	height: 50px;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 10px 20px;
+	border-radius: 30px;
+	background: hsl(176, 50%, 47%);
+	color: whitesmoke;
+	cursor: pointer;
+	font-family: "Commissioner", "sans-serif";
 }
 
-.select-reward-btn:hover,.select-reward-btn:focus{
-    background-color:hsl(176, 72%, 28%);
-    text-decoration: none;
-    cursor: pointer;
+.select-reward-btn:hover,
+.select-reward-btn:focus {
+	background-color: hsl(176, 72%, 28%);
+	text-decoration: none;
+	cursor: pointer;
 }
 
-.number{
-    color:black;
-    font-weight: 700;
-    font-size: 26px;
-    margin-right: 0.5rem;
+.number {
+	color: black;
+	font-weight: 700;
+	font-size: 26px;
+	margin-right: 0.5rem;
 }
 
-.number-modal{
-    display: flex;
-    color: black;
-    font-weight: 700;
-    font-size: 16px;
-    justify-content: flex-end;
-    margin-right: 0.5rem;
+.number-modal {
+	display: flex;
+	color: black;
+	font-weight: 700;
+	font-size: 16px;
+	justify-content: flex-end;
+	margin-right: 0.5rem;
 }
 
-.card-header-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-weight: 400;
-    font-size: 16px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
+.card-header-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-weight: 400;
+	font-size: 16px;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 1rem;
 }
 
-.card-header{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 18px;
+.card-header {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 700;
+	font-size: 18px;
 }
 
-.card-main-header{
-    display: flex;
-    flex-direction: row;
-    font-weight: 700;
-    font-size: 22px;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem 0 1rem 0;
+.card-main-header {
+	display: flex;
+	flex-direction: row;
+	font-weight: 700;
+	font-size: 22px;
+	justify-content: center;
+	text-align: center;
+	padding: 1rem 0 1rem 0;
 }
 
-.card-main-content{
-    display: flex;
-    flex-direction: row;
-    font-weight: 400;
-    font-size: 16px;
-    justify-content: center;
-    text-align: center;
-    color: hsl(0, 0%, 50%);
+.card-main-content {
+	display: flex;
+	flex-direction: row;
+	font-weight: 400;
+	font-size: 16px;
+	justify-content: center;
+	text-align: center;
+	color: hsl(0, 0%, 50%);
 }
 
-.backed.start{
-    display: flex;
-    flex-direction: column;
-    padding-right: 2rem;
+.backed.start {
+	display: flex;
+	flex-direction: column;
+	padding-right: 2rem;
 }
 
-.backed.middle{
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
-    padding-right: 2rem;
+.backed.middle {
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
-.backed.end{
-    display: flex;
-    flex-direction: column;
-    padding-left: 2rem;
+.backed.end {
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
 }
 
-.backed>.backed-number{
-    font-family: "Commissioner" , "sans-serif";
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin-bottom: 0.25rem;
-    color: hsl(0, 0%, 0%);
-    margin-bottom: 1rem;
+.backed > .backed-number {
+	font-family: "Commissioner", "sans-serif";
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 0.25rem;
+	color: hsl(0, 0%, 0%);
+	margin-bottom: 1rem;
 }
 
-.backed>.backed-text{
-    color: hsl(0, 0%, 70%);
-    font-weight: 500;
-    font-size: 16px;
+.backed > .backed-text {
+	color: hsl(0, 0%, 70%);
+	font-weight: 500;
+	font-size: 16px;
 }
 
-.pledge{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 400;
-    color: hsl(176, 50%, 47%);
+.pledge {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 400;
+	color: hsl(176, 50%, 47%);
 }
 
-.card-wrapper-for-progress{
-    background-color: whitesmoke;
-    padding: 2rem;
+.card-wrapper-for-progress {
+	background-color: whitesmoke;
+	padding: 2rem;
 }
 
-line{
-    border-left-width: 2px;
-    border-left-style: solid;
-    border-left-color: hsl(0, 0%, 70%);
-    height: 75px;
+line {
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: hsl(0, 0%, 70%);
+	height: 75px;
 }
 
-.card-row-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.card-row-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.card-row-wrapper.left{
-    display: flex;
+.card-row-wrapper.left {
+	display: flex;
 }
 
-.card-row-wrapper.right{
-    display: inline-flex;
-    flex-direction: row;
-    border-width: 0;
-    background: whitesmoke;
+.card-row-wrapper.right {
+	display: inline-flex;
+	flex-direction: row;
+	border-width: 0;
+	background: whitesmoke;
 }
 
-.bookmark-container{
-    display: flex;
-    flex-direction: row;
-    border: none;
-    outline: none;
-    height: 100%;
-    font-size: 14px;
-    border-radius: 30px;
-    overflow: visible;
-    background: hsl(0, 0%, 90%);
-    cursor: pointer;
-    justify-content: flex-end;
-    align-items: center;
-    text-align: center;
-    font-weight: 500;
-    color: hsl(0, 0%, 40%);
-    font-family: "Commissioner" , "sans-serif";
+.bookmark-container {
+	display: flex;
+	flex-direction: row;
+	border: none;
+	outline: none;
+	height: 100%;
+	font-size: 14px;
+	border-radius: 30px;
+	overflow: visible;
+	background: hsl(0, 0%, 90%);
+	cursor: pointer;
+	justify-content: flex-end;
+	align-items: center;
+	text-align: center;
+	font-weight: 500;
+	color: hsl(0, 0%, 40%);
+	font-family: "Commissioner", "sans-serif";
 }
 
-.bookmark-logo{
-    display: block;
-    width: 56px;
-    height: 56px;
-    background-image: url(./images/icon-bookmark.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
+.bookmark-logo {
+	display: block;
+	width: 56px;
+	height: 56px;
+	background-image: url(./images/icon-bookmark.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
-.bookmark-text{
-    border: none;
-    padding: 0 20px 0px 10px;
-    
+.bookmark-text {
+	border: none;
+	padding: 0 20px 0px 10px;
 }
 
-.progress-wrapper{
-    display: flex;
-    flex-direction: row;
-    align-items: left;
-    height: 2rem;
-    padding-top: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    width: 50vw;
+.progress-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: left;
+	height: 2rem;
+	padding-top: 2rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	width: 50vw;
 }
 
-.progress-bar{
-    background-color: #d8d8d8;
-    border-radius: 20px;
-    height: 10px;
-    width: 100%;
+.progress-bar {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	height: 10px;
+	width: 100%;
 }
 
-.progress-done{
-    background-color: hsl(176, 50%, 47%);
-    border-radius: 20px;
-    height: 100%;
-    width: 80%;
+.progress-done {
+	background-color: hsl(176, 50%, 47%);
+	border-radius: 20px;
+	height: 100%;
+	width: 80%;
 }

@@ -176,6 +176,22 @@
 	justify-content: center;
 }
 
+.pledge-box {
+	display: none;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.pledge-box-fields {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
 input[type="radio"]:checked + .modal-card-header-wrapper,
 .modal-card-header-wrapper:hover {
 	color: hsl(176, 50%, 47%);
