@@ -8,26 +8,26 @@ var closeBtnMouseHoverHandler = document.querySelector("#close-btn");
 
 var showPledge3 = document.getElementById("pledge3");
 
-var hidePledge3 = document.getElementById("pledge2");
+function MultipleEventSelector(pledgeId) {
+	var pledgeId = pledgeId.split(" ");
+	var results = [],
+		item;
 
-var showPledge2 = document.getElementById("pledge2");
-
-var hidePledge2 = document.getElementById("pledge3");
-
-showPledge2.addEventListener("click", () => {
-	if (document.querySelector("#pledge2").checked) {
-		document.getElementById("pledge-box2").style.display = "flex";
+	for (var i = 0; i < pledgeId.length; i++) {
+		item = document.getElementById(pledgeId[i]);
+		if (item) {
+			results.push(item);
+		}
 	}
-});
 
-hidePledge2.addEventListener("click", () => {
-	if (document.querySelector("#pledge3").checked) {
-		document, (getElementById("pledge-box2").style.display = "none");
-	}
-});
+	return results;
+}
 
+var hidingPledgeBox = MultipleEventSelector("pledge pledge1 pledge2 pledge3");
 // Event listeners 'click' for example
 backProject.addEventListener("click", openModal);
+
+backProject.addEventListener("click", disableRadio);
 
 closeBtn.addEventListener("click", closeModal);
 
@@ -37,9 +37,15 @@ closeBtnMouseHoverHandler.addEventListener("mouseover", closeBtnMouseOver);
 
 closeBtnMouseHoverHandler.addEventListener("mouseleave", closeBtnMouseLeave);
 
-showPledge3.addEventListener("click", showPledgeBox);
+// showPledge3.addEventListener("click", showPledgeBox);
 
-hidePledge3.addEventListener("click", hidePledgeBox);
+hidingPledgeBox[0].addEventListener("click", handleHidePledgeBoxClick, false);
+
+hidingPledgeBox[1].addEventListener("click", handleHidePledgeBoxClick, false);
+
+hidingPledgeBox[2].addEventListener("click", handleHidePledgeBoxClick, false);
+
+hidingPledgeBox[3].addEventListener("click", handleHidePledgeBoxClick, false);
 
 //Listen for outside click
 window.addEventListener("click", outsideClick);
@@ -88,55 +94,29 @@ function closeBtnMouseLeave() {
 	document.querySelector("#close-btn").style.backgroundImage = null;
 }
 
-function showPledgeBox() {
-	if (document.querySelector("#pledge3").checked) {
-		document.getElementById("pledge-box3").style.display = "flex";
+function handleHidePledgeBoxClick() {
+	if (document.querySelector("#pledge2").checked) {
+		document.getElementById("pledge-box2").style.display = "flex";
+		document.getElementById("black").style.borderColor = "hsl(176,50%,47%)";
+	}
+	if (!document.querySelector("#pledge2").checked) {
+		document.getElementById("pledge-box2").style.display = "none";
+		console.log("reverting back to original color");
+		document.getElementById("black").style.borderColor = "hsl(0,0%,48%)";
+	}
+
+	if (document.querySelector("#pledge1").checked) {
+		console.log("opening via for loop");
+		document.getElementById("pledge-box1").style.display = "flex";
+		document.getElementById("bamboo").style.borderColor = "hsl(176,50%,47%)";
+	}
+	if (!document.querySelector("#pledge1").checked) {
+		console.log("hiding via for loop");
+		document.getElementById("pledge-box1").style.display = "none";
+		document.getElementById("bamboo").style.borderColor = "hsl(0,0%,48%)";
 	}
 }
 
-function hidePledgeBox() {
-	if (!document.querySelector("#pledge3").checked) {
-		document.getElementById("pledge-box3").style.display = "none";
-	}
+function disableRadio() {
+	document.getElementById("pledge3").disabled = true;
 }
-
-// var pledgeEdition = document.querySelector('#pledge-edition-bamboo');
-
-// pledgeEdition.addEventListener('mouseover', () => {
-//     document.querySelector('#pledge-edition-bamboo').style.color = "hsl(176, 50%, 47%)";
-// })
-
-// pledgeEdition.addEventListener('mouseleave', () => {
-//     document.querySelector('#pledge-edition-bamboo').style.color = "hsl(0,0%,0%)";
-// })
-
-// pledgeEdition.addEventListener('click', () => {
-//     if(document.querySelector('#pledge2').checked === false){
-//         document.querySelector('#pledge2').checked = true
-//         document.querySelector('#pledge-edition-bamboo').style.color = "hsl(176, 50%, 47%)";
-//     }else{
-//         document.querySelector('#pledge2').checked = false
-//         document.querySelector('#pledge-edition-bamboo').style.color = "hsl(0, 0%, 0%)";
-//     }
-
-// })
-
-// hideElement.addEventListener("click", hideElementPledge);
-
-// showElement.addEventListener("click", showElementPledge);
-
-// var hideElement = document.getElementById("pledge1");
-
-// var showElement = document.getElementById("pledge2");
-
-// function hideElementPledge() {
-// 	console.log("hiding element");
-// 	document.getElementById("no-reward").style.display = "none";
-// }
-
-// function showElementPledge() {
-// 	console.log("showing element");
-// 	if (document.querySelector("#pledge2").checked === true) {
-// 		document.getElementById("no-reward").style.display = "block";
-// 	}
-// }
