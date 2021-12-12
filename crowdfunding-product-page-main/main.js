@@ -6,7 +6,7 @@ var closeBtn = document.getElementsByClassName("close-modal-btn")[0];
 
 var closeBtnMouseHoverHandler = document.querySelector("#close-btn");
 
-var showPledge3 = document.getElementById("pledge3");
+var selectBtnEnd = document.querySelector("#select-reward-btn-end");
 
 function MultipleEventSelector(pledgeId) {
 	var pledgeId = pledgeId.split(" ");
@@ -33,11 +33,11 @@ closeBtn.addEventListener("click", closeModal);
 
 bookmark.addEventListener("click", bookmarkEvent);
 
+selectBtnEnd.addEventListener("click", handleSelectBtnEnd);
+
 closeBtnMouseHoverHandler.addEventListener("mouseover", closeBtnMouseOver);
 
 closeBtnMouseHoverHandler.addEventListener("mouseleave", closeBtnMouseLeave);
-
-// showPledge3.addEventListener("click", showPledgeBox);
 
 hidingPledgeBox[0].addEventListener("click", handleHidePledgeBoxClick, false);
 
@@ -51,12 +51,10 @@ hidingPledgeBox[3].addEventListener("click", handleHidePledgeBoxClick, false);
 window.addEventListener("click", outsideClick);
 
 function openModal() {
-	console.log("123");
 	backProjectModal.style.display = "block";
 }
 
 function closeModal() {
-	console.log("close modal has been clicked");
 	backProjectModal.style.display = "none";
 }
 
@@ -115,8 +113,19 @@ function handleHidePledgeBoxClick() {
 		document.getElementById("pledge-box1").style.display = "none";
 		document.getElementById("bamboo").style.borderColor = "hsl(0,0%,48%)";
 	}
+	if (document.querySelector("#pledge").checked) {
+		document.getElementById("no-reward").style.borderColor = "hsl(176,50%,47%)";
+	}
+	if (!document.querySelector("#pledge").checked) {
+		document.getElementById("no-reward").style.borderColor = "hsl(0,0%,48%)";
+	}
 }
 
 function disableRadio() {
 	document.getElementById("pledge3").disabled = true;
+}
+
+function handleSelectBtnEnd() {
+	console.log("end step entered");
+	document.getElementById("pledge-end").style.display = "block";
 }
